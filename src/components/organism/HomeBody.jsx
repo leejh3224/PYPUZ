@@ -1,12 +1,12 @@
 import React from 'react'
 import { 
     Title,
-    Labels,
-    Blocks
+    Labels
 } from '../atom'
+import { Blocks } from './Blocks'
 
 // some comment
-export const HomeMain = () => (
+export const HomeBody = () => (
     <div>
         <Title text={'What do you like?'} center />
         <Labels 

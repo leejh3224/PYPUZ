@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BlockContent } from './BlockContent'
-import { BlockFooter } from './BlockFooter'
+import { BlockContent } from '../atom/BlockContent'
+import { BlockFooter } from '../atom/BlockFooter'
 
 // if user hovers on parent, footer appears
 const Wrapper = styled.div`

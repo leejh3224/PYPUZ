@@ -4,7 +4,7 @@ import {
     Title
 } from '../atom'
 import { 
-    HeaderIcons,
+    HeaderRight,
     HeaderSearchBar
 } from '../molecule'
 
@@ -30,7 +30,7 @@ export const Header = () => (
         </div>
         <RightItems className="col col-9">
             <HeaderSearchBar />
-            <HeaderIcons />
+            <HeaderRight />
         </RightItems>
     </Background>
 )
