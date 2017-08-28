@@ -21,7 +21,7 @@ const SignInButton = styled.button`
 
 export const HeaderRight = () => (
     <Wrapper>
-        <SignInButton>Sign In</SignInButton>
+         <SignInButton>Sign In</SignInButton> 
         {/* <Icons>
             <Icon name={'user-o'} order={1} onClick={ () => alert('알림') }/>
             <Icon name={'heart-o'} order={2} />

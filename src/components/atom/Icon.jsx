@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     position: absolute;
     left: ${ props => (props.order - 1) * 45 }px;
     &:hover {
-        color: #000000;
+        color: ${ props => props.noHover ? '#ffffff' : '#000000' };
     }
 `
 
@@ -21,6 +21,7 @@ export const Icon = props => (
         order={props.order} 
         small={props.small} 
         isWhite={props.isWhite}
+        noHover={props.noHover}
     >
         <i 
             className={ `fa fa-${props.name}` } 

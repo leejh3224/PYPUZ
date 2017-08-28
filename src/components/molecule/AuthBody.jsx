@@ -33,7 +33,7 @@ const BodyDivider = () => (
     </div>
 )
 
-export const AuthBody = () => (
+export const AuthBody = props => (
     <Wrapper>
         <ButtonWithLeftIcon
             icon={'facebook'}
@@ -48,8 +48,12 @@ export const AuthBody = () => (
             text={'continue with Google+'} 
         />
         <BodyDivider />
-        <Input type={'text'} placeholder={'Email'} />
-        <Input type={'text'} placeholder={'Password'} />
-        <SignInButton>Sign In</SignInButton>
+        { props.additionalFields.length &&
+        <Input type={'text'} placeholder={props.additionalFields[0]} /> }
+        <Input type={'email'} placeholder={'Email'} />
+        <Input type={'password'} placeholder={'Password'} />
+        { props.additionalFields.length &&
+        <Input type={'password'} placeholder={props.additionalFields[1]} /> }
+        <SignInButton>LOGIN</SignInButton>
     </Wrapper>
 )

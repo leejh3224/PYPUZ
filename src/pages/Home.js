@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { 
     Header,
     HomeBody,
-    Auth
+    AuthRegister
 } from '../components/organism'
 
 class Home extends Component {
@@ -11,8 +11,8 @@ class Home extends Component {
         return (
             <div>
                 <Header />
-                <Auth />
-                {/* <HomeBody /> */}
+                <AuthRegister /> 
+                {/* <HomeBody />  */}
             </div>
         )
     }

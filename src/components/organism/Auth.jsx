@@ -7,7 +7,7 @@ import {
     AuthFooter
 } from '../molecule'
 
-const Wrapper = styled.div`
+export const AuthWrapper = styled.div`
     width: auto;
     padding-right: 20px;
     margin-top: 20px;
@@ -21,9 +21,9 @@ const Wrapper = styled.div`
 `
 
 export const Auth = () => (
-    <Wrapper>
+    <AuthWrapper>
         <AuthHeader />
         <AuthBody />
         <AuthFooter />
-    </Wrapper>
+    </AuthWrapper>
 )

@@ -28,7 +28,8 @@ export const ButtonWithLeftIcon = props => (
         >
             <Icon 
                 name={props.icon} 
-                isWhite 
+                isWhite
+                noHover
             />
         </div>
         { props.text }
