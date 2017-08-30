@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import {
+    Link
+} from 'react-router-dom'
 import { 
     Title
 } from '../atom'
@@ -23,14 +26,26 @@ const RightItems = styled.div`
     justify-content: flex-end;
 `
 
-export const Header = () => (
-    <Background className="row">
-        <div className="col col-3">
-            <Title text={'PYPUZ'} />
-        </div>
-        <RightItems className="col col-9">
-            <HeaderSearchBar />
-            <HeaderRight />
-        </RightItems>
-    </Background>
-)
+const PlainLink = styled(Link)`
+    text-decoration: none;
+`
+
+export const Header = ({
+    isLoggedIn
+}) => {
+    return (
+        <Background className="row">
+            <div className="col col-3">
+                <PlainLink to="/">
+                    <Title 
+                        text={'PYPUZ'}
+                    />
+                </PlainLink>
+            </div>
+            <RightItems className="col col-9">
+                <HeaderSearchBar />
+                <HeaderRight isLoggedIn={isLoggedIn} />
+            </RightItems>
+        </Background>
+    )
+}

@@ -6,6 +6,7 @@ import { SearchButton } from './SearchButton'
 import { Label } from './Label'
 import { Labels } from './Labels'
 import { ButtonWithLeftIcon } from './ButtonWithLeftIcon'
+import { Spinner } from './Spinner'
 
 export { 
     Icon, 
@@ -15,5 +16,6 @@ export {
     SearchButton,
     Label,
     Labels,
-    ButtonWithLeftIcon
+    ButtonWithLeftIcon,
+    Spinner
 }

@@ -20,10 +20,21 @@ export const AuthWrapper = styled.div`
     }
 `
 
-export const Auth = () => (
-    <AuthWrapper>
-        <AuthHeader />
-        <AuthBody />
-        <AuthFooter />
-    </AuthWrapper>
-)
+export const Auth = ({
+    form,
+    onChangeInput,
+    onLogin
+}) => {
+
+    return (
+        <AuthWrapper>
+            <AuthHeader />
+            <AuthBody
+                form={form} 
+                onChangeInput={onChangeInput}
+                onLogin={onLogin}
+            />
+            <AuthFooter />
+        </AuthWrapper>
+    )
+}

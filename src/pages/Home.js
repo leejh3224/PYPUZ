@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
 
 import { 
-    Header,
-    HomeBody,
-    AuthRegister
+    HomeBody
 } from '../components/organism'
 
 class Home extends Component {
     render () {
         return (
             <div>
-                <Header />
-                <AuthRegister /> 
-                {/* <HomeBody />  */}
+                <HomeBody />
             </div>
         )
     }

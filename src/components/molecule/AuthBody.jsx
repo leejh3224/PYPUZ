@@ -33,27 +33,63 @@ const BodyDivider = () => (
     </div>
 )
 
-export const AuthBody = props => (
-    <Wrapper>
-        <ButtonWithLeftIcon
-            icon={'facebook'}
-            bg={'rgba(59, 89, 152, 0.9)'}
-            hoverColor={'rgba(59, 89, 152, 1)'}  
-            text={'continue with Facebook'} 
-        />
-        <ButtonWithLeftIcon
-            icon={'google'} 
-            bg={'rgba(211, 72, 54, 0.9)'}
-            hoverColor={'rgba(211, 72, 54, 1)'}   
-            text={'continue with Google+'} 
-        />
-        <BodyDivider />
-        { props.additionalFields.length &&
-        <Input type={'text'} placeholder={props.additionalFields[0]} /> }
-        <Input type={'email'} placeholder={'Email'} />
-        <Input type={'password'} placeholder={'Password'} />
-        { props.additionalFields.length &&
-        <Input type={'password'} placeholder={props.additionalFields[1]} /> }
-        <SignInButton>LOGIN</SignInButton>
-    </Wrapper>
-)
+export const AuthBody = ({
+    additionalFields,
+    form,
+    onChangeInput,
+    onLogin
+}) => {
+    const {
+        email,
+        password
+    } = form
+
+    return (
+        <Wrapper>
+            <ButtonWithLeftIcon
+                icon={'facebook'}
+                bg={'rgba(59, 89, 152, 0.9)'}
+                hoverColor={'rgba(59, 89, 152, 1)'}  
+                text={'continue with Facebook'} 
+            />
+            <ButtonWithLeftIcon
+                icon={'google'} 
+                bg={'rgba(211, 72, 54, 0.9)'}
+                hoverColor={'rgba(211, 72, 54, 1)'}   
+                text={'continue with Google+'} 
+            />
+            <BodyDivider />
+            { additionalFields &&
+            additionalFields.length &&
+            <Input
+                type={'text'} 
+                placeholder={additionalFields[0]} 
+            /> }
+            <Input
+                value={email}
+                type={'email'}
+                name="email"
+                placeholder={'Email'}
+                onChange={onChangeInput}
+            />
+            <Input
+                value={password}
+                type={'password'} 
+                name="password"
+                placeholder={'Password'} 
+                onChange={onChangeInput}
+            />
+            { additionalFields &&
+            additionalFields.length &&
+            <Input 
+                type={'password'} 
+                placeholder={additionalFields[1]} 
+            /> }
+            <SignInButton
+                onClick={onLogin}
+            >
+                LOGIN
+            </SignInButton>
+        </Wrapper>
+    )
+}

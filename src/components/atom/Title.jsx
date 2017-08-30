@@ -17,7 +17,7 @@ export const Title = props => (
             style={{ 
                 paddingBottom: 5,
                 borderBottom: props.hasUnderline && `1px solid ${c.lightGrey}`
-            }} 
+            }}
         >
             { props.text }
         </h3>

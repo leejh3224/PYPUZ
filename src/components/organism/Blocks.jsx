@@ -18,8 +18,11 @@ const Wrapper = styled.div`
 
 export const Blocks = props => (
     <Wrapper>
-        { props.srcs.map(src => (
-            <Block src={src} />
+        { props.srcs.map((src, index) => (
+            <Block
+                key={index} 
+                src={src} 
+            />
         )) }
     </Wrapper>
 )

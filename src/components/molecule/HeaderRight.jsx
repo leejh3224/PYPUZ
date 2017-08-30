@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import {
+    Link
+} from 'react-router-dom'
 import { 
     Icon, 
     Icons 
@@ -13,20 +16,26 @@ const Wrapper = styled.div`
     }
 `
 
-// sign in button or if logged in show icons
 const SignInButton = styled.button`
     margin-top: 16.5px;
     margin-right: 20px;
 `
 
-export const HeaderRight = () => (
+export const HeaderRight = props => (
     <Wrapper>
-         <SignInButton>Sign In</SignInButton> 
-        {/* <Icons>
-            <Icon name={'user-o'} order={1} onClick={ () => alert('알림') }/>
-            <Icon name={'heart-o'} order={2} />
-            <Icon name={'bell-o'} order={3} />
-            <Icon name={'upload'} order={4} />
-        </Icons> */}
+        { props.isLoggedIn ? (
+            <Icons>
+                <Icon name={'user-o'} order={1} onClick={ () => alert('알림') }/>
+                <Icon name={'heart-o'} order={2} />
+                <Icon name={'bell-o'} order={3} />
+                <Icon name={'upload'} order={4} />
+            </Icons>
+        ) : (
+            <Link to="/login">
+                <SignInButton>
+                    Sign In
+                </SignInButton>
+            </Link>
+        )}
     </Wrapper>
 )
