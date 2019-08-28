@@ -28,7 +28,7 @@
     "redux-pender": "^1.0.24",
     "redux-thunk": "^2.2.0",
     "styled-components": "^2.1.2",
-    "snyk": "^1.173.1"
+    "snyk": "^1.221.0"
   },
   "scripts": {
     "server": "NODE_PATH=./server node ./server/index",
