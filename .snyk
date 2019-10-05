@@ -8626,3 +8626,8 @@ patch:
         patched: '2019-06-06T08:07:09.696Z'
     - react-scripts > jest > jest-cli > @jest/core > @jest/reporters > jest-runtime > jest-config > @jest/test-sequencer > jest-runner > jest-jasmine2 > @jest/environment > @jest/transform > jest-haste-map > jest-util > @jest/fake-timers > jest-message-util > micromatch > extglob > expand-brackets > snapdragon > debug:
         patched: '2019-06-06T08:07:09.696Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-05T03:54:45.607Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-05T03:54:45.607Z'
