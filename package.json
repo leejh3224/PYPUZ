@@ -7,7 +7,7 @@
     "dotenv": "^4.0.0",
     "fb": "^2.0.0",
     "googleapis": "^21.3.0",
-    "hellojs": "^1.15.1",
+    "hellojs": "^1.18.3",
     "joi": "^10.6.0",
     "jsonwebtoken": "^8.0.0",
     "koa": "^2.3.0",
