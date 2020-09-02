@@ -6,7 +6,7 @@
     "axios": "^0.18.1",
     "dotenv": "^4.0.0",
     "fb": "^2.0.0",
-    "googleapis": "^21.3.0",
+    "googleapis": "^39.1.0",
     "hellojs": "^1.15.1",
     "joi": "^10.6.0",
     "jsonwebtoken": "^8.0.0",
