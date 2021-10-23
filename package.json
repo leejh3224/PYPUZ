@@ -28,7 +28,7 @@
     "redux-pender": "^1.0.24",
     "redux-thunk": "^2.2.0",
     "styled-components": "^2.1.2",
-    "snyk": "^1.173.1"
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "server": "NODE_PATH=./server node ./server/index",
@@ -36,8 +36,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "snyk-protect": "snyk-protect",
+    "prepublish": "yarn run snyk-protect"
   },
   "snyk": true
 }
