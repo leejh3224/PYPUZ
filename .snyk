@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.25.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -8626,3 +8626,16 @@ patch:
         patched: '2019-06-06T08:07:09.696Z'
     - react-scripts > jest > jest-cli > @jest/core > @jest/reporters > jest-runtime > jest-config > @jest/test-sequencer > jest-runner > jest-jasmine2 > @jest/environment > @jest/transform > jest-haste-map > jest-util > @jest/fake-timers > jest-message-util > micromatch > extglob > expand-brackets > snapdragon > debug:
         patched: '2019-06-06T08:07:09.696Z'
+  'npm:hoek:20180212':
+    - googleapis > google-auth-library > gtoken > request > hawk > hoek:
+        patched: '2023-05-25T22:03:40.607Z'
+    - googleapis > google-auth-library > gtoken > request > hawk > boom > hoek:
+        patched: '2023-05-25T22:03:40.607Z'
+    - googleapis > google-auth-library > gtoken > request > hawk > sntp > hoek:
+        patched: '2023-05-25T22:03:40.607Z'
+  SNYK-JS-LODASH-567746:
+    - react-scripts > jest > jest-cli > @jest/core > @jest/reporters > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2023-05-25T22:03:40.607Z'
+  'npm:tough-cookie:20170905':
+    - googleapis > google-auth-library > gtoken > request > tough-cookie:
+        patched: '2023-05-25T22:03:40.607Z'
