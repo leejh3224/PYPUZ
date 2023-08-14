@@ -4621,9 +4621,10 @@ he@1.2.x:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
 
-hellojs@^1.15.1:
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/hellojs/-/hellojs-1.15.1.tgz#73ea7a501854ab548cd370c006df6884d5153580"
+hellojs@^1.18.8:
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/hellojs/-/hellojs-1.20.0.tgz#5d54c88a3333c4782593df992773676de06433ba"
+  integrity sha512-zfZGRt0J0OpJHnw2GJz4uh+rzMNAMWpIymiaRbSmCqCvqDMLSx2/qR5JucqnHPsZHUEjyKj5aLJ8K54kyHHjLQ==
 
 hex-color-regex@^1.1.0:
   version "1.1.0"
